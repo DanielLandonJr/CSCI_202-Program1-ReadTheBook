@@ -26,6 +26,10 @@ public class ProcessTheBook {
      * 
      * <p><strong><em>Notes:</em></strong> This is the start point for processing the book.</p>
      * 
+     * @custom.precondition Pre-Condition text!!!
+     * 
+     * @custom.postcondition Post-Condition text!!!
+     * 
      * @param _bookToProcess string indicating the name of the file containg the book to process.
      * @return true if successful, false if there was a problem
      */
