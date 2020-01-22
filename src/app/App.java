@@ -3,6 +3,8 @@ package app;
 /**
  * <h1>App</h1>
  * 
+ * <h2>Notes:</h2>
+ * 
  * <h3>Entry point for application. If a command line argument is supplied then that file name will be used to process otherwise defaults to "oliver.txt" per class requirements.</h3>
  *  
  * <p><strong>author:</strong> <em>Daniel C. Landon Jr.</em></p>
@@ -15,20 +17,51 @@ package app;
  */
 
 public class App {
+
+    /**
+     * <h1>main</h1>
+     * 
+     * <h2>Notes:</h2>
+     * 
+     * <h3>Nothing special here, entry point</h3>
+     * 
+     * @param args argument list supplied through command prompt
+     * @throws Exception any errors
+     */
     public static void main(String[] args) throws Exception {
-        ProcessTheBook theBook = new ProcessTheBook();
+
+        // variables
+        ProcessTheBook _theBook = new ProcessTheBook();
+        String _processMessage = "";
 
         // check to see if args is empty
-        if(args[0] == "") {
+        if(args.length == 0) {
             // no command line arguments supplied so use default
 
-            if(theBook.StartProcessing("oliver.txt")) {
-                System.out.println("SUCCESS: Book Processed.");
+            if(_theBook.StartProcessing("oliver.txt")) {
+                _processMessage = "SUCCESS: Book Processed.";
             } // end if
+        
             else {
-                System.out.println("ERROR: Book Not Processed!");
+                _processMessage = "ERROR: Book Not Processed!";
             } // end else
 
         } // end if
-    }
-}
+
+        else {
+            // command line argument supplied, use the value
+
+            if(_theBook.StartProcessing(args[0])) {
+                _processMessage = "SUCCESS: Book Processed.";
+            } // end if
+            else {
+                _processMessage = "ERROR: Book Not Processed!";
+            } // end else
+
+        } // end else
+
+        System.out.println("\n" + _processMessage);
+
+    } // end main
+
+} // end class
