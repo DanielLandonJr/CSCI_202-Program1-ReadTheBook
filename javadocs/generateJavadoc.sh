@@ -1,0 +1,1 @@
+javadoc /z/CloudStorage/_daniel/IUS\ Computer\ Science/Spring\ 2020/C202\ Intro\ To\ Software\ Systems/assignments/ReadTheBook/src/app/*.java
