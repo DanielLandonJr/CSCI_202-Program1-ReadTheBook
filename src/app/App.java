@@ -21,9 +21,7 @@ public class App {
     /**
      * <h1>main</h1>
      * 
-     * <h2>Notes:</h2>
-     * 
-     * <h3>Nothing special here, entry point</h3>
+     * <p><strong><em>Notes:</em></strong> Nothing special here, entry point</p>
      * 
      * @param args argument list supplied through command prompt
      * @throws Exception any errors

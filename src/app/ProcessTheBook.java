@@ -6,9 +6,7 @@ import java.util.Scanner;
 /**
  * <h1>ProcessTheBook</h1>
  * 
- * <h2>Notes:</h2>
- * 
- * <h3>This class does not have a constructor. The class will take a text file and process it for word and line count and display relevant information once completed.</h3>
+ * <p><strong><em>Notes:</em></strong> This class does not have a constructor. The class will take a text file and process it for word and line count and display relevant information once completed.</p>
  * 
  * <p><strong>author:</strong> <em>Daniel C. Landon Jr.</em></p>
  * <p><strong>instructor:</strong> <em>Dr. Bob Walsh</em></p>
@@ -24,9 +22,7 @@ public class ProcessTheBook {
     /**
      * <h1>StartProcessing</h1>
      * 
-     * <h2>Notes:</h2>
-     * 
-     * <h3>This is the start point for processing the book.</h3>
+     * <p><strong><em>Notes:</em></strong> This is the start point for processing the book.</p>
      * 
      * @param _bookToProcess string indicating the name of the file containg the book to process.
      * @return true if successful, false if there was a problem
@@ -89,9 +85,7 @@ public class ProcessTheBook {
     /**
      * <h1>FindWordCount</h1>
      * 
-     * <h2>Notes:</h2>
-     * 
-     * <h3>Takes and array of words and counts them, but it skips anything that is blank.</h3>
+     * <p><strong><em>Notes:</em></strong> Takes and array of words and counts them, but it skips anything that is blank.</p>
      * 
      * @param _wordArray array of words from parsed sentence
      * @return returns the numbers of words found
@@ -118,9 +112,7 @@ public class ProcessTheBook {
     /**
      * <h1>StripSpecialCharacters</h1>
      * 
-     * <h2>Notes:</h2>
-     * 
-     * <h3>Takes a line of text and removes all non-alpha characters.</h3>
+     * <p><strong><em>Notes:</em></strong> Takes a line of text and removes all non-alpha characters.</p>
      * 
      * @param _lineToProcess the line of text to process for special characters
      * @return the line after it has been processed
@@ -138,9 +130,7 @@ public class ProcessTheBook {
     /**
      * <h1>FindLongestWord</h1>
      * 
-     * <h2>Notes:</h2>
-     * 
-     * <h3>This will sort through the array of words supplied to determine which one is the largest. Once a word is found it will be kept. Any words that come after that are of the same size will be ignored and the first word found will be kept.</h3>
+     * <p><strong><em>Notes:</em></strong> This will sort through the array of words supplied to determine which one is the largest. Once a word is found it will be kept. Any words that come after that are of the same size will be ignored and the first word found will be kept.</p>
      * 
      * @param _wordArray an array containg the words from the parsed line of text
      * @param _currentWord the largest word found.
@@ -169,9 +159,7 @@ public class ProcessTheBook {
     /**
      * <h1>ConsoleDisplay</h1>
      * 
-     * <h2>Notes:</h2>
-     * 
-     * <h3>Displays results of the book being processed.</h3>
+     * <p><strong><em>Notes:</em></strong> Displays results of the book being processed.</p>
      * 
      * @param _lineCount number of lines counted
      * @param _wordCount number of words counted
@@ -179,7 +167,7 @@ public class ProcessTheBook {
      */
     protected void ConsoleOutput(int _lineCount, int _wordCount, String _largestWord) {
 
-        // geie me some output
+        // give me some output
         System.out.println("\nNumber of lines read: " + _lineCount);
         System.out.println("\nNumber of words read: " + _wordCount);
         System.out.println("\nAverage number of words per line: " + (_wordCount / _lineCount));
