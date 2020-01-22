@@ -1,6 +1,8 @@
 package app;
 
 import java.io.File;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Scanner;
 
 /**
@@ -31,6 +33,10 @@ public class ProcessTheBook {
 
         try {
             System.out.println("\nStarting Book Processing ...");
+
+            Instant _startTime = Instant.now();
+
+            System.out.println("\n START TIME: " + _startTime);
 
             // open file
             File readFile = new File(_bookToProcess);
@@ -73,6 +79,14 @@ public class ProcessTheBook {
 
             // output to console
             ConsoleOutput(_lineCounter, _wordCounter, _longestWord);
+            
+            Instant _endTime = Instant.now();
+            
+            Duration _timeElapsed = Duration.between(_startTime, _endTime);
+
+            System.out.println("\n END TIME: " + _endTime);
+            
+            System.out.println("\nTime for completion (milliseconds): " + _timeElapsed.toMillis());
 
         } // end try
 
