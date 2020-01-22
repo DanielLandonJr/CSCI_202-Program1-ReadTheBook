@@ -30,6 +30,8 @@ public class ProcessTheBook {
     public boolean StartProcessing(String _bookToProcess) {
 
         try {
+            System.out.println("\nStarting Book Processing ...");
+
             // open file
             File readFile = new File(_bookToProcess);
 
@@ -43,7 +45,7 @@ public class ProcessTheBook {
             String _cleanLine = "";
             String[] _parse;
             
-            // while(_dataInput.hasNext()){
+            while(_dataInput.hasNext()){
                 // read the line
                 String _line = _dataInput.nextLine();
 
@@ -61,7 +63,11 @@ public class ProcessTheBook {
 
                 // number of lines processed
                 _lineCounter++;
-            // } // end while
+
+                // echo out every 100,000th line
+                if(_lineCounter % 100000 == 0) System.out.println("\nEvery 100,000th line: " + _line);
+
+            } // end while
 
             _dataInput.close();
 
