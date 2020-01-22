@@ -20,17 +20,18 @@ import java.util.Scanner;
  */
 
 public class ProcessTheBook {
-    
+
     /**
      * <h1>StartProcessing</h1>
      * 
      * <h2>Notes:</h2>
      * 
-     * <h3>This method is the starting point for processing a book.</h3>
+     * <h3>This is the start point for processing the book.</h3>
      * 
-     * @param _bookToProcess This is the file that contains the text for the book to process
-     * @return boolean true if book is processed correctly, false if there was a problem
+     * @param _bookToProcess string indicating the name of the file containg the book to process.
+     * @return true if successful, false if there was a problem
      */
+
     public boolean StartProcessing(String _bookToProcess) {
 
         try {
@@ -42,7 +43,7 @@ public class ProcessTheBook {
             int _wordCounter = 0;
             String _longestWord = "";
             
-            // while(_dataInput.hasNext()){
+            while(_dataInput.hasNext()){
                 String _line = _dataInput.nextLine();
                 String _cleanLine = "";
                 String[] _parse;
@@ -56,7 +57,7 @@ public class ProcessTheBook {
 
                 _wordCounter+= _parse.length;
                 _lineCounter++;
-            // } // end while
+            } // end while
 
             _dataInput.close();
 
