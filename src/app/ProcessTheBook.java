@@ -26,9 +26,9 @@ public class ProcessTheBook {
      * 
      * <p><strong><em>Notes:</em></strong> This is the start point for processing the book.</p>
      * 
-     * @custom.precondition Pre-Condition text!!!
+     * @custom.precondition text flie must be supplied for processing
      * 
-     * @custom.postcondition Post-Condition text!!!
+     * @custom.postcondition application will process book successfully
      * 
      * @param _bookToProcess string indicating the name of the file containg the book to process.
      * @return true if successful, false if there was a problem
@@ -111,6 +111,10 @@ public class ProcessTheBook {
      * 
      * <p><strong><em>Notes:</em></strong> Takes and array of words and counts them, but it skips anything that is blank.</p>
      * 
+     * @custom.precondition an array of words must be supplied
+     * 
+     * @custom.postcondition a count of how many words in the array
+     * 
      * @param _wordArray array of words from parsed sentence
      * @return returns the numbers of words found
      */
@@ -138,6 +142,10 @@ public class ProcessTheBook {
      * 
      * <p><strong><em>Notes:</em></strong> Takes a line of text and removes all non-alpha characters.</p>
      * 
+     * @custom.precondition must be supplied a line of text
+     * 
+     * @custom.postcondition line will be modified to where only alph characters will be available
+     * 
      * @param _lineToProcess the line of text to process for special characters
      * @return the line after it has been processed
      */
@@ -155,6 +163,10 @@ public class ProcessTheBook {
      * <h1>FindLongestWord</h1>
      * 
      * <p><strong><em>Notes:</em></strong> This will sort through the array of words supplied to determine which one is the largest. Once a word is found it will be kept. Any words that come after that are of the same size will be ignored and the first word found will be kept.</p>
+     * 
+     * @custom.precondition an array of words, with no special characters must be supplied as well as a variable containg the current largest word
+     * 
+     * @custom.postcondition a new variable will ne returned showing the current largest word
      * 
      * @param _wordArray an array containg the words from the parsed line of text
      * @param _currentWord the largest word found.
@@ -184,6 +196,10 @@ public class ProcessTheBook {
      * <h1>ConsoleDisplay</h1>
      * 
      * <p><strong><em>Notes:</em></strong> Displays results of the book being processed.</p>
+     * 
+     * @custom.precondition variable containing line/word count as well as largest word
+     * 
+     * @custom.postcondition simpel output to console based on information supplied
      * 
      * @param _lineCount number of lines counted
      * @param _wordCount number of words counted

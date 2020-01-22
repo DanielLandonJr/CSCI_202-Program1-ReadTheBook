@@ -23,6 +23,10 @@ public class App {
      * 
      * <p><strong><em>Notes:</em></strong> Nothing special here, entry point</p>
      * 
+     * @custom.precondition if a custom file is not supplied in the command line then the "oliver.txt" file must be available in the same directory as the application, this is the default text file.
+     * 
+     * @custom.postcondition successful execution of program
+     * 
      * @param args argument list supplied through command prompt
      * @throws Exception any errors
      */
