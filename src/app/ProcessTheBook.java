@@ -144,7 +144,7 @@ public class ProcessTheBook {
      * 
      * @custom.precondition must be supplied a line of text
      * 
-     * @custom.postcondition line will be modified to where only alph characters will be available
+     * @custom.postcondition line will be modified to where only alpha characters will be available
      * 
      * @param _lineToProcess the line of text to process for special characters
      * @return the line after it has been processed
@@ -164,9 +164,9 @@ public class ProcessTheBook {
      * 
      * <p><strong><em>Notes:</em></strong> This will sort through the array of words supplied to determine which one is the largest. Once a word is found it will be kept. Any words that come after that are of the same size will be ignored and the first word found will be kept.</p>
      * 
-     * @custom.precondition an array of words, with no special characters must be supplied as well as a variable containg the current largest word
+     * @custom.precondition an array of words, with no special characters must be supplied as well as a variable containing the current largest word
      * 
-     * @custom.postcondition a new variable will ne returned showing the current largest word
+     * @custom.postcondition a new variable will be returned showing the current largest word
      * 
      * @param _wordArray an array containg the words from the parsed line of text
      * @param _currentWord the largest word found.
@@ -199,7 +199,7 @@ public class ProcessTheBook {
      * 
      * @custom.precondition variable containing line/word count as well as largest word
      * 
-     * @custom.postcondition simpel output to console based on information supplied
+     * @custom.postcondition simple output to console based on information supplied
      * 
      * @param _lineCount number of lines counted
      * @param _wordCount number of words counted
