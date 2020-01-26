@@ -1,5 +1,3 @@
-package app;
-
 /**
  * <h1>App</h1>
  * 
@@ -15,6 +13,8 @@ package app;
  * @author Daniel C. Landon Jr.
  * @version 0.1
  */
+
+package app;
 
 public class App {
 
@@ -41,11 +41,15 @@ public class App {
             // no command line arguments supplied so use default
 
             if(_theBook.StartProcessing("oliver.txt")) {
+
                 _processMessage = "SUCCESS: Book Processed.";
+
             } // end if
         
             else {
+
                 _processMessage = "ERROR: Book Not Processed!";
+
             } // end else
 
         } // end if
@@ -54,10 +58,14 @@ public class App {
             // command line argument supplied, use the value
 
             if(_theBook.StartProcessing(args[0])) {
+
                 _processMessage = "SUCCESS: Book Processed.";
+
             } // end if
             else {
+
                 _processMessage = "ERROR: Book Not Processed!";
+                
             } // end else
 
         } // end else
